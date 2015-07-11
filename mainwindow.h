@@ -2,6 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "json.h"
+#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include <QPushButton>
+#include <QTreeView>
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +22,8 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QPushButton *openButton;
+    QTreeView *treeView;
 };
 
 #endif // MAINWINDOW_H
